@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-5">
+
+        <form class="needs-validation" novalidate>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Payment from example</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="mb-3">
+                                <label for="card" class="form-label">Card #</label>
+                                <input type="text" class="form-control" required id="card"
+                                    placeholder="XXXXXXXXXXXXXXXXXXXXX">
+                                <div class="invalid-feedback">
+                                    Please provide a credit card.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-3">
+                                <label for="cvc" class="form-label">CVC #</label>
+                                <input type="text" class="form-control" name="cvc" id="cvc" placeholder="0000" required>
+                                <div class="invalid-feedback">
+                                    Please provide a CVC.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-3">
+                                <label for="amount" class="form-label">Amount</label>
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <input type="text" class="form-control" name="amount" id="amount" placeholder="Amount" required>
+                                <div class="invalid-feedback">
+                                    Please provide amount.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="firstname" class="form-label">First Name</label>
+                                <input type="text" class="form-control" name="firstname" id="firstname" required>
+                                <div class="invalid-feedback">
+                                    Please provide a name.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="lastname" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" name="lastname" id="lastname" required>
+                                <div class="invalid-feedback">
+                                    Please provide a last name.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="city" class="form-label">City</label>
+                                <input type="text" class="form-control" name="city" id="city" required>
+                                <div class="invalid-feedback">
+                                    Please provide a city.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-3">
+                                <label for="state" class="form-label">State</label>
+                                <select class="form-select" name="state" id="state" required>
+                                    <option value>Pick a state</option>
+                                    <option>State1</option>
+                                    <option>State2</option>
+                                    <option>State3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-3">
+                                <label for="postalcode" class="form-label">Postal Code</label>
+                                <input type="text" class="form-control" name="postalcode" id="postalcode" required>
+                                <div class="invalid-feedback">
+                                    Please provide a postal code.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="mb-3">
+                                <p class="form-label">We accept:</p>
+                                <div class="bg-secondary rounded px-1 text-white fs-4 d-flex align-items-center">
+                                    <div class="form-check form-check-inline d-flex align-items-center mx-1">
+                                        <input class="form-check-input fs-6 me-2" type="radio" name="cardtype"
+                                            id="option1" value="option1" checked>
+                                        <label  for="option1"><i class="fa-brands fa-cc-mastercard"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline d-flex align-items-center mx-1">
+                                        <input class="form-check-input fs-6 me-2" type="radio" name="cardtype"
+                                            id="option2" value="option2">
+                                        <label  for="option2"><i class="fa-brands fa-cc-visa"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline d-flex align-items-center mx-1">
+                                        <input class="form-check-input fs-6 me-2" type="radio" name="cardtype"
+                                            id="option3" value="option3">
+                                        <label  for="option3"><i class="fa-brands fa-cc-paypal"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline d-flex align-items-center mx-1">
+                                        <input class="form-check-input fs-6 me-2" type="radio" name="cardtype"
+                                            id="option4" value="option4">
+                                        <label  for="option4"><i class="fa-brands fa-cc-apple-pay"></i></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="massage" class="form-label">Massage</label>
+                                <textarea class="form-control" id="massage"></textarea>
+                                <div class="form-text" id="basic-addon4">Add any notes here.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary mx-1">Cancel</button>
+                    <button type="submit" class="btn btn-primary mx-1">Send</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/76dec80b1c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script>
+            // Espera a que el DOM esté completamente cargado
+            document.addEventListener('DOMContentLoaded', function() {
+                // Selecciona todos los formularios que necesitan validación
+                var forms = document.querySelectorAll('.needs-validation');
+        
+                // Previene el envío del formulario si tiene campos inválidos
+                Array.prototype.slice.call(forms).forEach(function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            });
+        </script>
+</body>
+
+</html>
